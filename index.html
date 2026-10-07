@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emprendimientos del Ecuador | Tónico Hidratante</title>
+<style>
+:root {
+  --crema:#f7f1e9; --beige:#e8d5c2; --cafe:#3d2c24; --dorado:#b89572;
+  --blanco:#fffdf9; --verde:#69745d;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--crema);color:var(--cafe);line-height:1.6}
+nav{position:sticky;top:0;z-index:10;background:rgba(61,44,36,.97);padding:14px 6%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:1.25rem;font-weight:800;color:#fff;letter-spacing:1px}
+nav a{color:#fff;text-decoration:none;margin-left:22px;font-size:.95rem}
+nav a:hover{color:var(--beige)}
+.hero{min-height:78vh;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;padding:70px 8%;background:linear-gradient(135deg,#fbf7f1,#eadaca)}
+.hero h1{font-size:clamp(2.6rem,6vw,5rem);line-height:1.05;margin:15px 0}
+.hero h1 span{color:var(--dorado)}
+.hero p{font-size:1.15rem;max-width:650px}
+.badge{display:inline-block;padding:8px 14px;border:1px solid var(--dorado);border-radius:999px;font-size:.85rem;letter-spacing:1px}
+.btn{display:inline-block;margin-top:25px;padding:13px 22px;background:var(--cafe);color:#fff;text-decoration:none;border-radius:30px;font-weight:bold}
+.product-card{background:#fff;border-radius:28px;padding:18px;box-shadow:0 20px 50px rgba(61,44,36,.16)}
+.product-card img{width:100%;display:block;border-radius:20px}
+section{padding:75px 8%}
+.section-title{text-align:center;font-size:2.3rem;margin-bottom:14px}
+.section-sub{text-align:center;max-width:750px;margin:0 auto 40px;color:#6a5b52}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:var(--blanco);padding:28px;border-radius:22px;border:1px solid #eadfd4;box-shadow:0 10px 25px rgba(61,44,36,.07)}
+.card .icon{font-size:2rem;margin-bottom:12px}
+.card h3{margin-bottom:8px}
+.innovador{background:#3d2c24;color:#fff}
+.innovador .section-sub{color:#eadfd4}
+.innovador-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
+.innovador img{width:100%;border-radius:25px;background:#fff;padding:10px}
+.points{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:25px}
+.point{padding:18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:16px}
+.proceso{background:#efe4d8}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.step{text-align:center;background:#fff;padding:25px 15px;border-radius:20px}
+.number{width:42px;height:42px;border-radius:50%;background:var(--dorado);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:bold}
+.highlight{margin-top:40px;background:var(--blanco);padding:35px;border-radius:25px;border-left:6px solid var(--dorado)}
+footer{background:#2c211c;color:#fff;text-align:center;padding:35px 8%}
+footer p{opacity:.8}
+@media(max-width:850px){
+  .hero,.innovador-grid{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  nav{flex-direction:column;gap:10px}
+  nav a{margin:0 8px}
+}
+@media(max-width:520px){.steps,.points{grid-template-columns:1fr}section{padding:55px 6%}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">EMPRENDE ECUADOR</div>
+  <div>
+    <a href="#inicio">Inicio</a>
+    <a href="#tipos">Emprendimientos</a>
+    <a href="#innovador">Innovador</a>
+    <a href="#proceso">Proceso</a>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div>
+    <span class="badge">PROYECTO STEAM</span>
+    <h1>Emprendimientos<br><span>del Ecuador</span></h1>
+    <p>
+      Una mirada a los diferentes tipos de emprendimientos que existen en
+      nuestro país y a una propuesta innovadora: un <strong>tónico hidratante
+      de leche de arroz</strong>.
+    </p>
+    <a class="btn" href="#tipos">Conocer el proyecto ↓</a>
+  </div>
+  <div class="product-card">
+    <img src="tonico-hidratante.png" alt="Tónico hidratante de leche de arroz">
+  </div>
+</header>
+
+<section id="tipos">
+  <h2 class="section-title">Tipos de emprendimientos</h2>
+  <p class="section-sub">
+    En Ecuador existen emprendimientos de diferentes áreas. Cada uno puede
+    responder a una necesidad, generar empleo y aportar al desarrollo de la comunidad.
+  </p>
+  <div class="cards">
+    <article class="card">
+      <div class="icon">🍲</div><h3>Alimentación</h3>
+      <p>Restaurantes, cafeterías, productos artesanales, repostería y alimentos innovadores.</p>
+    </article>
+    <article class="card">
+      <div class="icon">🛍️</div><h3>Comercio</h3>
+      <p>Venta de ropa, accesorios, productos para el hogar y negocios que funcionan de forma física u online.</p>
+    </article>
+    <article class="card">
+      <div class="icon">💻</div><h3>Tecnología</h3>
+      <p>Aplicaciones, servicios digitales, tiendas virtuales y soluciones tecnológicas para diferentes necesidades.</p>
+    </article>
+    <article class="card">
+      <div class="icon">🌱</div><h3>Artesanal y sostenible</h3>
+      <p>Productos elaborados de manera artesanal que buscan aprovechar recursos y reducir desperdicios.</p>
+    </article>
+    <article class="card">
+      <div class="icon">💄</div><h3>Cosmética y bienestar</h3>
+      <p>Productos de cuidado personal, higiene y bienestar elaborados con ingredientes de origen natural.</p>
+    </article>
+    <article class="card">
+      <div class="icon">🤝</div><h3>Servicios</h3>
+      <p>Negocios que ofrecen conocimientos o soluciones: diseño, educación, transporte, reparación y más.</p>
+    </article>
+  </div>
+</section>
+
+<section class="innovador" id="innovador">
+  <div class="innovador-grid">
+    <div><img src="tonico-hidratante.png" alt="Producto innovador: tónico hidratante de leche de arroz"></div>
+    <div>
+      <span class="badge">EMPRENDIMIENTO DESTACADO</span>
+      <h2 class="section-title" style="text-align:left;margin-top:15px">Tónico hidratante de leche de arroz</h2>
+      <p>
+        Nuestra propuesta innovadora es un tónico hidratante inspirado en las
+        propiedades cosméticas de la leche de arroz. Está pensado como un
+        producto de cuidado personal con una presentación natural, suave y moderna.
+      </p>
+      <div class="points">
+        <div class="point"><strong>💧 Hidratación</strong><br>Enfocado en aportar una sensación de suavidad y frescura.</div>
+        <div class="point"><strong>🌾 Ingrediente natural</strong><br>El arroz es el elemento principal de inspiración del producto.</div>
+        <div class="point"><strong>🌿 Enfoque suave</strong><br>Presentación pensada para el cuidado de la piel.</div>
+        <div class="point"><strong>♻️ Oportunidad</strong><br>Puede convertirse en una alternativa de emprendimiento con identidad propia.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proceso" class="proceso">
+  <h2 class="section-title">¿Cómo nace el emprendimiento?</h2>
+  <p class="section-sub">El proyecto combina creatividad, investigación y una necesidad del mercado para desarrollar una propuesta de producto.</p>
+  <div class="steps">
+    <div class="step"><div class="number">1</div><h3>Idea</h3><p>Identificamos una oportunidad en el cuidado personal.</p></div>
+    <div class="step"><div class="number">2</div><h3>Investigación</h3><p>Analizamos ingredientes, presentación y posibles consumidores.</p></div>
+    <div class="step"><div class="number">3</div><h3>Propuesta</h3><p>Diseñamos el concepto del tónico hidratante de leche de arroz.</p></div>
+    <div class="step"><div class="number">4</div><h3>Emprendimiento</h3><p>Convertimos la idea en una propuesta con identidad y posibilidad comercial.</p></div>
+  </div>
+  <div class="highlight">
+    <h3>💡 ¿Por qué es innovador?</h3>
+    <p>
+      Porque transforma una idea basada en un ingrediente conocido, como el arroz,
+      en una propuesta de cuidado personal con una identidad visual propia.
+      El objetivo es demostrar que una idea sencilla puede convertirse en una
+      oportunidad de emprendimiento mediante creatividad e innovación.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Conclusión</h2>
+  <p class="section-sub">
+    Los emprendimientos ecuatorianos son una fuente de creatividad, trabajo y
+    desarrollo. Con este proyecto mostramos diferentes áreas de emprendimiento
+    y destacamos el tónico hidratante de leche de arroz como una propuesta
+    innovadora desarrollada dentro del proyecto STEAM.
+  </p>
+</section>
+
+<footer>
+  <h3>Proyecto STEAM — Emprendimientos del Ecuador</h3>
+  <p style="margin-top:8px">Nombre del estudiante: ____________________ &nbsp; | &nbsp; Curso: __________</p>
+</footer>
+
+</body>
+</html>
